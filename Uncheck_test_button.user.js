@@ -4,7 +4,10 @@
 // @include     http://localhost/Security/SelectAccount
 // @include     http://*.oberon.local/Security/SelectAccount
 // @include     http://*.myngp.com/Security/SelectAccount
-// @version     1
+// @include     https://localhost/Security/SelectAccount
+// @include     https://*.oberon.local/Security/SelectAccount
+// @include     https://*.myngp.com/Security/SelectAccount
+// @version     1.0.1
 // ==/UserScript==
 
 document.forms[0]["testFilter"].checked = false
