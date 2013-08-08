@@ -10,4 +10,5 @@
 // @version     1.0.1
 // ==/UserScript==
 
-document.forms[0]["testFilter"].checked = false
+ngp.tenantList.Reset();
+document.forms[0]["testFilter"].click();
