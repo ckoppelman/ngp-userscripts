@@ -9,6 +9,5 @@
 // @include     https://*.myngp.com/Security/SelectAccount
 // @version     1.0.1
 // ==/UserScript==
-
-ngp.tenantList.Reset();
+ 
 document.forms[0]["testFilter"].click();
