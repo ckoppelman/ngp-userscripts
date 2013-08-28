@@ -3,7 +3,6 @@
 // @namespace   NGPVAN
 // @description Click a tenant by its id
 // @include     https://*.myngp.com/Security/SelectAccount
-// @include     https://localhost/Security/SelectAccount
 // @include     https://*.oberon.local/Security/SelectAccount
 // @version     1.0
 // @author    	ckoppelman
