@@ -5,8 +5,8 @@
 // @include     https://*.myngp.com/Security/SelectAccount
 // @include     http://localhost/Security/SelectAccount
 // @include     https://*.oberon.local/Security/SelectAccount
-// @include		http*://oberon.ngpsoftware.com/Security/SelectAccount
-// @version     1.1.1
+// @include		http://oberon.ngpsoftware.com/Security/SelectAccount
+// @version     1.1.2
 // @author    	dplassmann
 // ==/UserScript==
 
