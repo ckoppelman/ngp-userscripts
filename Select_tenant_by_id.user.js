@@ -5,8 +5,8 @@
 // @include     https://*.myngp.com/Security/SelectAccount
 // @include     http://localhost/Security/SelectAccount
 // @include     https://*.oberon.local/Security/SelectAccount
-// @require     http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js
-// @version     1.1
+// @include		http*://oberon.ngpsoftware.com/Security/SelectAccount
+// @version     1.1.1
 // @author    	dplassmann
 // ==/UserScript==
 

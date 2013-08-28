@@ -7,7 +7,8 @@
 // @include     https://localhost/Security/SelectAccount
 // @include     https://*.oberon.local/Security/SelectAccount
 // @include     https://*.myngp.com/Security/SelectAccount
-// @version     1.0.2
+// @include		http://oberon.ngpsoftware.com/Security/SelectAccount
+// @version     1.0.3
 // ==/UserScript==
  
 document.forms[0]["testFilter"].click();
