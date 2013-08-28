@@ -2,11 +2,11 @@
 // @name        Select tenant by id
 // @namespace   NGPVAN
 // @description Click a tenant by its id
-// @include     https://*.myngp.com/Security/SelectAccount
-// @include     http://localhost/Security/SelectAccount
-// @include     https://*.oberon.local/Security/SelectAccount
-// @include		http://oberon.ngpsoftware.com/Security/SelectAccount
-// @version     1.1.2
+// @include     https://*.myngp.com/Security/SelectAccount*
+// @include     http://localhost/Security/SelectAccount*
+// @include     https://*.oberon.local/Security/SelectAccount*
+// @include		http://oberon.ngpsoftware.com/Security/SelectAccount*
+// @version     1.1.3
 // @author    	dplassmann
 // ==/UserScript==
 
