@@ -17,9 +17,9 @@ GM_xmlhttpRequest({
 	onload: function (response) {
 		var data = JSON.parse(response.responseText);
 		var newHTML = document.createElement('div'); 
-		newHTML.innerHTML='<div id="manifest">'
-			+'Version: '+data.version
-			+'</div>'; 
+		newHTML.innerHTML='<pre id="manifest">'
+			+response.responseText
+			+'</pre>'; 
 		document.body.appendChild(newHTML);
 	}, 
 });
