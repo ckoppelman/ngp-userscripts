@@ -12,19 +12,20 @@
 
 var urlMap = {
     'localhost' : 'http://localhost:82/Api',
-    'dev1.oberon.local' : 'http://dev1.oberon.local:82',
-    'dev2.oberon.local' : 'http://dev2.oberon.local:82',
-    'dev3.oberon.local' : 'http://dev3.oberon.local:82',
-    'dev4.oberon.local' : 'http://dev4.oberon.local:82',
-    'dev5.oberon.local' : 'http://dev5.oberon.local:82',
-    'dev6.oberon.local' : 'http://dev6.oberon.local:82',
     'www2.myngp.com' : 'http://api2.myngp.com',
     'www3.myngp.com' : 'http://api3.myngp.com',
     'www4.myngp.com' : 'http://api4.myngp.com',
-    'oberon.ngpsoftware.com' : 'oberon.ngpsoftware.com:82'
 };
 
-var $url = urlMap[location.host]+'/v2/Manifest';
+var $apiRoot;
+
+if (urlMap[location.host]){
+	$apiRoot = urlMap[location.host]
+} else {
+	$apiRoot = 'http://'+location.host+':82'
+}
+
+var $url = $apiRoot+'/v2/Manifest';
 
 GM_xmlhttpRequest({
     method: 'GET',
