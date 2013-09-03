@@ -17,11 +17,13 @@ GM_xmlhttpRequest({
 	onload: function (response) {
 		var manifest = JSON.parse(response.responseText);
 		var newHTML = document.createElement('div'); 
-		newHTML.innerHTML='<pre id="manifest">'
-			+manifest.userName+' at '+(new Date(manifest.buildDateTime)).toLocaleString()+' on '+manifest.buildMachine
-			+'\n'
-			+manifest.local.branch+'/'+manifest.local.commit
-			+'</pre>'; 
+		newHTML.innerHTML='<table id="manifest">'
+			+'<tr><th>Commit</th><td>'+manifest.local.commit+'</td></tr>'
+			+'<tr><th>User</th><td>'+manifest.userName+'</td></tr>'
+			+'<tr><th>Date</th><td>'+(new Date(manifest.buildDateTime)).toLocaleString()+'</td></tr>'
+			+'<tr><th>Machine</th><td>'+manifest.buildMachine+'</td></tr>'
+			+'<tr><th>Branch</th><td>'+manifest.local.branch+'</td></tr>'
+			+'</table>'; 
 		document.body.appendChild(newHTML);
 	}, 
 });
