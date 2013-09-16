@@ -6,7 +6,7 @@
 // @include     https://*.myngp.com/Tenant/Update*
 // @include     http://*.myngp.com/Tenant/Create*
 // @include     http://*.myngp.com/Tenant/Update*
-// @version     1
+// @version     1.3
 // ==/UserScript==
 
 window.$(document).ready(function() {
@@ -15,7 +15,7 @@ window.$(document).ready(function() {
 	var messages = window.ngp.tenant.update.paymentGateway.Messages;
 	messages.TestSuccessful = "We have not necessarily verified this account as valid. Please look things over very carefully to ensure that these are the correct credentials.";
 	
-	messages.Changed += " Remember - We have not necessarily verified this account as valid."
+	messages.Changed += " Remember - We have not necessarily verified this account as valid.";
 
 	window.$("[name='skipValidation']").click(function() {
 		var $ = window.$;
