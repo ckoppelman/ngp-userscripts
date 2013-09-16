@@ -12,7 +12,10 @@
 window.$(document).ready(function() {
 	window.$(".paymentGatewayContainer :button[name^='PaymentGateway_']").parent(":visible").append("<button type='button' name='skipValidation'>Skip Validation</button>");
 	
-	window.ngp.tenant.update.paymentGateway.Messages.TestSuccessful = "We cannot verify this account against the payment gateway. Please look things over very carefully to ensure that these are the correct credentials.";
+	var messages = window.ngp.tenant.update.paymentGateway.Messages;
+	messages.TestSuccessful = "We have not necessarily verified this account as valid. Please look things over very carefully to ensure that these are the correct credentials.";
+	
+	messages.Changed += " Remember - We have not necessarily verified this account as valid."
 
 	window.$("[name='skipValidation']").click(function() {
 		var $ = window.$;
