@@ -1,8 +1,8 @@
 Use these links to automatically update using Firefox (and maybe Chrome?):
 
-2. [Select tenant by user id](raw/Select_tenant_by_id.user.js)
-3. [Skip paypal validation (CAUTION!)](raw/Skip_Paypal_Validation_-_CAUTION!.user.js)
-4. [Automatically uncheck test button](raw/Uncheck_test_button.user.js)
+2. [Select tenant by user id](https://gist.github.com/ckoppelman/6186669/raw/Select_tenant_by_id.user.js)
+3. [Skip paypal validation (CAUTION!)](https://gist.github.com/ckoppelman/6186669/raw/Skip_Paypal_Validation_-_CAUTION!.user.js)
+4. [Automatically uncheck test button](https://gist.github.com/ckoppelman/6186669/raw/Uncheck_test_button.user.js)
 
 #Installing
 
