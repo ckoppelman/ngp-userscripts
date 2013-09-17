@@ -12,9 +12,9 @@
 
 var urlMap = {
     'localhost' : 'http://localhost:82/Api',
-    'www2.myngp.com' : 'http://api2.myngp.com',
-    'www3.myngp.com' : 'http://api3.myngp.com',
-    'www4.myngp.com' : 'http://api4.myngp.com',
+    'www2.myngp.com' : 'https://api.myngp.com',
+    'www3.myngp.com' : 'https://api3.myngp.com',
+    'www4.myngp.com' : 'https://api4.myngp.com',
 };
 
 var $apiRoot;
