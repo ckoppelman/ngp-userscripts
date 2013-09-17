@@ -6,6 +6,7 @@
 // @include     https://*.myngp.com/Tenant/Update*
 // @include     http://*.myngp.com/Tenant/Create*
 // @include     http://*.myngp.com/Tenant/Update*
+// @author		ckoppelman
 // @version     1.6.1
 // ==/UserScript==
 
