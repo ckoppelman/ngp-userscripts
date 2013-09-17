@@ -6,13 +6,14 @@
 // @include     https://*.myngp.com/Tenant/Update*
 // @include     http://*.myngp.com/Tenant/Create*
 // @include     http://*.myngp.com/Tenant/Update*
-// @version     1.4
+// @version     1.5
 // ==/UserScript==
 
 window.$(document).ready(function() {
 	
 	var addButton = function () {
 		window.$(".paymentGatewayContainer :button[name^='PaymentGateway_']").parent(":visible").append("<button type='button' name='skipValidation'>Skip Validation</button>");
+		return true;
 	};
 	
 	window.$("#AddGateway").click(addButton);
