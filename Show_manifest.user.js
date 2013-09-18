@@ -39,7 +39,7 @@ GM_xmlhttpRequest({
             +'<tr><th>User</th><td>'+manifest.userName+'</td></tr>'
             +'<tr><th>Date</th><td>'+(new Date(manifest.buildDateTime)).toLocaleString()+'</td></tr>'
             +'<tr><th>Machine</th><td>'+manifest.buildMachine+'</td></tr>'
-            +'<tr><th>Branch</th><td>'+manifest.local.branch+'</td></tr>'
+            +(manifest.userName == 'TeamCityBuild' ? '' :'<tr><th>Branch</th><td>'+manifest.local.branch+'</td></tr>')
             +'</table>'; 
         document.body.appendChild(newHTML); 
 	},
