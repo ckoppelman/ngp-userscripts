@@ -6,20 +6,31 @@
 // @include     https://*.myngp.com/Tenant/Update*
 // @include     http://*.myngp.com/Tenant/Create*
 // @include     http://*.myngp.com/Tenant/Update*
-// @version     1.3
+// @author		ckoppelman
+// @version     1.6.1
 // ==/UserScript==
 
 window.$(document).ready(function() {
-	window.$(".paymentGatewayContainer :button[name^='PaymentGateway_']").parent(":visible").append("<button type='button' name='skipValidation'>Skip Validation</button>");
 	
-	var messages = window.ngp.tenant.update.paymentGateway.Messages;
-	messages.TestSuccessful = "We have not necessarily verified this account as valid. Please look things over very carefully to ensure that these are the correct credentials.";
+	var addButton = function () {
+		window.$(".paymentGatewayContainer :button[name^='PaymentGateway_']").parent().append("<button type='button' name='skipValidation'>Skip Validation</button>");
+		return true;
+	};
 	
-	messages.Changed += " Remember - We have not necessarily verified this account as valid.";
+	window.$("#AddGateway").click(addButton);
+	
+	addButton();
+	
 
-	window.$("[name='skipValidation']").click(function() {
+	window.$(".paymentGatewayContainer").on("click", "[name='skipValidation']", function () {
 		var $ = window.$;
 		var ngp = window.ngp;
+		
+		var messages = ngp.tenant.update.paymentGateway.Messages;
+		messages.TestSuccessful = "We have not necessarily verified this account as valid. Please look things over very carefully to ensure that these are the correct credentials.";
+		
+		messages.Changed += " Remember - We have not necessarily verified this account as valid.";
+		
 		
 		var fakeButton = $(this);
 		var button = fakeButton.prevAll(":button:visible");

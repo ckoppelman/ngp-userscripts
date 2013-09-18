@@ -1,7 +1,7 @@
 ngp-userscripts
 ===============
 
-Variuos Userscripts for NGP software
+Various Userscripts for NGP software
 
 
 Use these links to automatically update using Firefox (and maybe Chrome?):
