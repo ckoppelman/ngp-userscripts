@@ -10,6 +10,7 @@ Use these links to automatically update using Firefox (and maybe Chrome?):
 3. [Skip paypal validation (CAUTION!)](../../raw/master/Skip_Paypal_Validation_-_CAUTION!.user.js)
 4. [Automatically uncheck test button](../../raw/master/Uncheck_test_button.user.js)
 4. [Show manifest file](../../raw/master/Show_manifest.user.js)
+5. [Redirect PROD project to dashboard](../../raw/master/JIRA_prod_dashboard.user)
 
 #Installing
 
