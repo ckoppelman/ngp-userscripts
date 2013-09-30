@@ -6,7 +6,7 @@
 // @include     http*://*.oberon.local/Security/SelectAccount*
 // @include     http*://*.myngp.com/Security/SelectAccount*
 // @include     http*://oberon.ngpsoftware.com/Security/SelectAccount*
-// @version     1.1
+// @version     1.2
 // @grant    GM_xmlhttpRequest
 // ==/UserScript==
 
@@ -42,11 +42,5 @@ GM_xmlhttpRequest({
             +(manifest.userName == 'TeamCityBuild' ? '' :'<tr><th>Branch</th><td>'+manifest.local.branch+'</td></tr>')
             +'</table>'; 
         document.body.appendChild(newHTML); 
-	},
-	onerror: function (response){
-		alert(response.responseText);
-	},
-	onereadystatechange: function (response){
-		alert(response.responseText);
 	}
 });
