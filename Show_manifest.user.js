@@ -7,7 +7,7 @@
 // @include     http*://*.myngp.com/Security/SelectAccount*
 // @include     http*://oberon.ngpsoftware.com/Security/SelectAccount*
 // @version     1.0
-// @grant    GM_addStyle
+// @grant    GM_xmlhttpRequest
 // ==/UserScript==
 
 var urlMap = {
@@ -29,7 +29,7 @@ var $url = $apiRoot+'/v2/Manifest';
 
 GM_xmlhttpRequest({
     method: 'GET',
-    dataType: 'jsonp',
+    dataType: 'json',
     url: $url,
     onload: function (response) {
         var manifest = JSON.parse(response.responseText);
@@ -43,4 +43,10 @@ GM_xmlhttpRequest({
             +'</table>'; 
         document.body.appendChild(newHTML); 
 	},
+	onerror: function (response){
+		alert(response.responseText);
+	},
+	onereadystatechange: function (response){
+		alert(response.responseText);
+	}
 });
