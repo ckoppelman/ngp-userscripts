@@ -6,7 +6,7 @@
 // @include     http*://*.oberon.local/Security/SelectAccount*
 // @include     http*://*.myngp.com/Security/SelectAccount*
 // @include     http*://oberon.ngpsoftware.com/Security/SelectAccount*
-// @version     1.0
+// @version     1.1
 // @grant    GM_xmlhttpRequest
 // ==/UserScript==
 
