@@ -6,13 +6,14 @@
 // @include     http*://*.oberon.local/Security/SelectAccount*
 // @include     http*://*.myngp.com/Security/SelectAccount*
 // @include     http*://oberon.ngpsoftware.com/Security/SelectAccount*
-// @version     1.2
+// @version     1.3
 // @grant    GM_xmlhttpRequest
 // ==/UserScript==
 
 var urlMap = {
     'localhost' : 'http://localhost:82/Api',
     'www2.myngp.com' : 'https://api.myngp.com',
+    'www1.myngp.com' : 'https://api1.myngp.com',
     'www3.myngp.com' : 'https://api3.myngp.com',
     'www4.myngp.com' : 'https://api4.myngp.com',
 };
