@@ -16,6 +16,7 @@ var urlMap = {
     'www1.myngp.com' : 'https://api1.myngp.com',
     'www3.myngp.com' : 'https://api3.myngp.com',
     'www4.myngp.com' : 'https://api4.myngp.com',
+    'www5.myngp.com' : 'https://api5.myngp.com',
 };
 
 var $apiRoot;
